@@ -1,5 +1,5 @@
 language: java
-install: mvn clean install --quiet -Ptravis -DskipTests=true -B
+install: mvn clean install --quiet -Ptravis -B
 jdk:
   - openjdk7
 branches:
