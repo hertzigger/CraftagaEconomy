@@ -17,7 +17,7 @@ public class CraftagaEconomy extends JavaPlugin {
 
     public void onEnable()
     {
-        System.out.println("hello world");
+        getLogger().info("Craftaga Economy Enabled");
     }
 
     public int getInt()

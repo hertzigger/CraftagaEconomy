@@ -17,6 +17,20 @@
     <url>http://maven.apache.org</url>
 
     <build>
+        <defaultGoal>clean package install</defaultGoal>
+        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+        <finalName>${project.name}</finalName>
+
+        <resources>
+            <resource>
+                <targetPath>.</targetPath>
+                <filtering>true</filtering>
+                <directory>${basedir}/src/main/resources</directory>
+                <includes>
+                    <include>plugin.yml</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <!-- Build an executable JAR -->
@@ -60,7 +74,7 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.6.2-R1.1-SNAPSHOT</version>
+            <version>1.6.4-R0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
