@@ -1,3 +1,9 @@
 name: CraftagaEconomy
 main: com.craftaga.craftagaeconomy.CraftagaEconomy
 version: 1
+commands:
+  ccon:
+    description: Get your balance.
+    usage: /<command>
+    permission: CraftagaEconomy.ccon
+    permission-message: You don't hava <permission>
